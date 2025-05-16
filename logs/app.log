@@ -1,0 +1,26 @@
+2025-05-16 08:17:07,699 - INFO - [AIStudioProxyServer:setup_server_logging:338] - ===== AIStudioProxyServer 日志系统已在 lifespan 中初始化 =====
+2025-05-16 08:17:07,701 - INFO - [AIStudioProxyServer:setup_server_logging:339] - 日志级别设置为: INFO
+2025-05-16 08:17:07,701 - INFO - [AIStudioProxyServer:setup_server_logging:340] - 日志文件路径: /root/AIstudioProxyAPI/logs/app.log
+2025-05-16 08:17:07,702 - INFO - [AIStudioProxyServer:setup_server_logging:341] - 控制台日志处理器已添加。
+2025-05-16 08:17:07,702 - INFO - [AIStudioProxyServer:setup_server_logging:342] - Print 重定向 (由 SERVER_REDIRECT_PRINT 环境变量控制): 禁用
+2025-05-16 08:17:07,703 - INFO - [AIStudioProxyServer:lifespan:1059] - --- 未检测到 HTTP_PROXY 或 HTTPS_PROXY 环境变量，不使用代理 (由 server.py 的 lifespan 记录) ---
+2025-05-16 08:17:07,705 - INFO - [AIStudioProxyServer:load_excluded_models:3058] - ✅ 从 'excluded_models.txt' 加载了 13 个模型到排除列表: {'gemini-2.0-flash-live-001', 'gemini-2.0-flash-exp', 'gemini-1.5-flash-8b-001', 'gemini-1.5-flash-001-tuning', 'learnlm-1.5-pro-experimental', 'gemini-1.5-pro-001', 'gemini-1.5-flash-001', 'gemini-1.5-flash-latest', 'gemini-1.5-flash-8b-latest', 'gemini-2.0-flash-lite-001', 'imagen-3.0-generate-002', 'gemini-1.5-pro-latest', 'veo-2.0-generate-001'}
+2025-05-16 08:17:07,706 - INFO - [AIStudioProxyServer:lifespan:1065] - 
+============================================================
+          🚀 AI Studio Proxy Server (FastAPI App Lifespan) 🚀
+============================================================
+2025-05-16 08:17:07,707 - INFO - [AIStudioProxyServer:lifespan:1066] - FastAPI 应用生命周期: 启动中...
+2025-05-16 08:17:07,714 - INFO - [AIStudioProxyServer:lifespan:1068] -    启动 Playwright...
+2025-05-16 08:17:10,420 - INFO - [AIStudioProxyServer:lifespan:1071] -    ✅ Playwright 已启动。
+2025-05-16 08:17:10,421 - INFO - [AIStudioProxyServer:lifespan:1086] -    连接到 Camoufox 服务器 (浏览器 WebSocket 端点) 于: ws://localhost:38683/4c6b6edff269953d42badac43fddf691
+2025-05-16 08:17:10,754 - INFO - [AIStudioProxyServer:lifespan:1090] -    ✅ 已连接到浏览器实例: 版本 135.0.1-beta.24
+2025-05-16 08:17:10,754 - INFO - [AIStudioProxyServer:_initialize_page_logic:552] - --- 初始化页面逻辑 (连接到现有浏览器) ---
+2025-05-16 08:17:10,755 - INFO - [AIStudioProxyServer:_initialize_page_logic:560] -    检测到启动模式: debug
+2025-05-16 08:17:10,755 - INFO - [AIStudioProxyServer:_initialize_page_logic:582] -    调试模式: 尝试从环境变量 ACTIVE_AUTH_JSON_PATH 加载认证文件...
+2025-05-16 08:17:10,755 - INFO - [AIStudioProxyServer:_initialize_page_logic:591] -    调试模式下未通过环境变量提供认证文件。将使用浏览器当前状态。
+2025-05-16 08:17:10,756 - INFO - [AIStudioProxyServer:_initialize_page_logic:600] - 创建新的浏览器上下文...
+2025-05-16 08:17:10,756 - INFO - [AIStudioProxyServer:_initialize_page_logic:606] -    (不使用 storage_state)
+2025-05-16 08:17:10,757 - INFO - [AIStudioProxyServer:_initialize_page_logic:612] -    (浏览器上下文不使用显式代理配置)
+2025-05-16 08:17:10,841 - INFO - [AIStudioProxyServer:_initialize_page_logic:646] - -> 未找到合适的现有页面，正在打开新页面并导航到 https://aistudio.google.com/prompts/new_chat...
+2025-05-16 08:17:16,039 - INFO - [AIStudioProxyServer:_initialize_page_logic:650] -    为新创建的页面添加模型列表响应监听器 (导航前)。
+2025-05-16 08:17:27,101 - INFO - [AIStudioProxyServer:_initialize_page_logic:656] - -> 新页面导航尝试完成。当前 URL: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faistudio.google.com%2Fprompts%2Fnew_chat&followup=https%3A%2F%2Faistudio.google.com%2Fprompts%2Fnew_chat&ifkv=ASKV5MhKpkmEyAn7ycWI1mksO2GCdCx4iTbuHAyltj26lR6oPmc6sFfoSMj21Dw6hxA0JdKUEwlzaQ&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1908964651%3A1747383440576594

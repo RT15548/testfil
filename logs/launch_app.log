@@ -1,0 +1,38 @@
+2025-05-16 08:16:45,884 - INFO - [CamoufoxLauncher:setup_launcher_logging:117] - ============================== Camoufox启动器日志系统已初始化 ==============================
+2025-05-16 08:16:45,885 - INFO - [CamoufoxLauncher:setup_launcher_logging:118] - 日志级别设置为: INFO
+2025-05-16 08:16:45,885 - INFO - [CamoufoxLauncher:setup_launcher_logging:119] - 日志文件路径: /root/AIstudioProxyAPI/logs/launch_app.log
+2025-05-16 08:16:45,890 - INFO - [CamoufoxLauncher:<module>:410] - 🚀 Camoufox 启动器开始运行 🚀
+2025-05-16 08:16:45,890 - INFO - [CamoufoxLauncher:<module>:411] - =================================================
+2025-05-16 08:16:45,891 - INFO - [CamoufoxLauncher:ensure_auth_dirs_exist:124] - 正在检查并确保认证文件目录存在...
+2025-05-16 08:16:45,892 - INFO - [CamoufoxLauncher:ensure_auth_dirs_exist:127] -   ✓ 活动认证目录就绪: /root/AIstudioProxyAPI/auth_profiles/active
+2025-05-16 08:16:45,892 - INFO - [CamoufoxLauncher:ensure_auth_dirs_exist:129] -   ✓ 已保存认证目录就绪: /root/AIstudioProxyAPI/auth_profiles/saved
+2025-05-16 08:16:45,892 - INFO - [CamoufoxLauncher:check_dependencies:205] - --- 步骤 1: 检查依赖项 ---
+2025-05-16 08:16:45,893 - INFO - [CamoufoxLauncher:check_dependencies:212] - 正在检查 Python 模块:
+2025-05-16 08:16:45,893 - INFO - [CamoufoxLauncher:check_dependencies:216] -   ✓ 模块 'camoufox' 已找到。
+2025-05-16 08:16:45,893 - INFO - [CamoufoxLauncher:check_dependencies:229] -   ✓ 成功从 'server.py' 导入 'app' 对象。
+2025-05-16 08:16:45,894 - INFO - [CamoufoxLauncher:check_dependencies:246] - ✅ 所有启动器依赖项检查通过。
+2025-05-16 08:16:45,894 - INFO - [CamoufoxLauncher:<module>:414] - =================================================
+2025-05-16 08:16:45,894 - INFO - [CamoufoxLauncher:<module>:423] - 通过 --debug 参数选择启动模式: 调试模式
+2025-05-16 08:16:45,895 - INFO - [CamoufoxLauncher:<module>:439] - -------------------------------------------------
+2025-05-16 08:16:45,895 - INFO - [CamoufoxLauncher:<module>:442] - --- 步骤 2: 检查 FastAPI 服务器目标端口 (2048) 是否被占用 ---
+2025-05-16 08:16:45,895 - INFO - [CamoufoxLauncher:<module>:484] -   ✅ 端口 2048 (主机 0.0.0.0) 当前可用。
+2025-05-16 08:16:45,896 - INFO - [CamoufoxLauncher:<module>:490] - --- 端口 2048 检查完毕。 ---
+2025-05-16 08:16:45,896 - INFO - [CamoufoxLauncher:<module>:500] - --- 步骤 3: 内部启动 Camoufox (调试模式)... ---
+2025-05-16 08:16:45,897 - INFO - [CamoufoxLauncher:<module>:502] -   调试模式: 检查可用的认证文件...
+2025-05-16 08:16:45,898 - INFO - [CamoufoxLauncher:<module>:544] -    未找到认证文件。将使用浏览器当前状态。
+2025-05-16 08:16:45,899 - INFO - [CamoufoxLauncher:<module>:579] -   将执行 Camoufox 内部启动命令: /root/AIstudioProxyAPI/venv/bin/python -u /root/AIstudioProxyAPI/launch_camoufox.py --internal-launch --internal-debug
+2025-05-16 08:16:45,901 - INFO - [CamoufoxLauncher:<module>:581] -   Camoufox 内部进程已启动 (PID: 672)。正在等待 WebSocket 端点输出 (最长 45 秒)...
+2025-05-16 08:16:50,659 - INFO - [CamoufoxLauncher:<module>:606] - [InternalCamoufox-stdout-PID:672]: --- [内部Camoufox启动] 模式: debug, 认证文件: 无 ---
+2025-05-16 08:16:50,660 - INFO - [CamoufoxLauncher:<module>:606] - [InternalCamoufox-stdout-PID:672]: --- [内部Camoufox启动] 正在调用 camoufox.server.launch_server 以获取 WebSocket 端点... ---
+2025-05-16 08:16:56,259 - INFO - [CamoufoxLauncher:<module>:606] - [InternalCamoufox-stdout-PID:672]: Launching server...
+2025-05-16 08:17:06,169 - INFO - [CamoufoxLauncher:<module>:606] - [InternalCamoufox-stdout-PID:672]: Server launched: 9.912s
+2025-05-16 08:17:06,171 - INFO - [CamoufoxLauncher:<module>:606] - [InternalCamoufox-stdout-PID:672]: Websocket endpoint:[93m ws://localhost:38683/4c6b6edff269953d42badac43fddf691 [0m
+2025-05-16 08:17:06,172 - INFO - [CamoufoxLauncher:<module>:610] -   ✅ 成功从 Camoufox 内部进程捕获到 WebSocket 端点: ws://localhost:38683/4c6b6edff269953d42b...
+2025-05-16 08:17:07,174 - INFO - [CamoufoxLauncher:<module>:626] - -------------------------------------------------
+2025-05-16 08:17:07,175 - INFO - [CamoufoxLauncher:<module>:627] - --- 步骤 4: 启动集成的 FastAPI 服务器 (监听端口: 2048) ---
+2025-05-16 08:17:07,175 - INFO - [CamoufoxLauncher:<module>:644] -   为 server.app 设置的环境变量:
+2025-05-16 08:17:07,176 - INFO - [CamoufoxLauncher:<module>:645] -     CAMOUFOX_WS_ENDPOINT=ws://localhost:38683/4c6b6edff269953d42b...
+2025-05-16 08:17:07,176 - INFO - [CamoufoxLauncher:<module>:646] -     LAUNCH_MODE=debug
+2025-05-16 08:17:07,176 - INFO - [CamoufoxLauncher:<module>:649] -     SERVER_REDIRECT_PRINT=false
+2025-05-16 08:17:07,177 - INFO - [CamoufoxLauncher:<module>:650] -     SERVER_LOG_LEVEL=INFO
+2025-05-16 08:17:07,177 - INFO - [CamoufoxLauncher:<module>:652] -   即将运行 Uvicorn，加载 server:app ...
